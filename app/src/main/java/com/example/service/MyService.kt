@@ -13,9 +13,11 @@ class MyService : Service() {
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        Log.i(TAG, "In Service class: Displays the current thread id "+Thread.currentThread().name.toString())
 
-            for(i in 1..10)
+            for(i in 1..100)
             {
+                Thread.sleep(10)
                 showLog("Service is doing some thing!!"+i.toString())
             }
         return super.onStartCommand(intent, flags, startId)
