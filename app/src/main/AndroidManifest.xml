@@ -9,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <service
+            android:name=".LifeCycleService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
+            android:name=".UnBoundedService"
+            android:enabled="true"
+            android:exported="true"></service>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,11 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<!--        <service-->
-<!--            android:name="com.example.service.LifeCycleService">-->
-<!--&lt;!&ndash;            android:enabled="true"&ndash;&gt;-->
-<!--&lt;!&ndash;            android:exported="true"&ndash;&gt;-->
-<!--            </service>-->
     </application>
 
 </manifest>

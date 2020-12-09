@@ -14,14 +14,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btnStart.setOnClickListener{
-            val intent= Intent(this,LifeCycleService::class.java)
+            val intent= Intent(this,UnBoundedService::class.java)
             startService(intent)
 
         }
 
 
         btnStop.setOnClickListener{
-            val intent= Intent(this,LifeCycleService::class.java)
+            val intent= Intent(this,UnBoundedService::class.java)
             stopService(intent)
         }
 
