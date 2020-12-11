@@ -16,6 +16,7 @@ class SecondService : Service() {
 
         for(i in 21..73)
         {
+
             Thread.sleep(1000)
             showLog("Service is doing some thing!!"+i.toString())
         }
