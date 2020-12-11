@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity() {
 
         btnStart.setOnClickListener{
             startService(intent)
-            startService(intent2)
+//            startService(intent2)
 //            Thread.sleep(4000)
-            finish()
+//            finish()
 
         }
 
