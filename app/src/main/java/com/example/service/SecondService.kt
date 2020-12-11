@@ -14,7 +14,7 @@ class SecondService : Service() {
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Log.i(TAG, "In Service class: Displays the current thread id "+Thread.currentThread().name.toString())
 
-        for(i in 21..33)
+        for(i in 21..73)
         {
             Thread.sleep(1000)
             showLog("Service is doing some thing!!"+i.toString())
