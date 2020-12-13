@@ -13,6 +13,7 @@
             android:name="com.example.service.SampleService"
             android:enabled="true"
             android:exported="true"></service>
+        <activity android:name=".SecondActivity"/>
 
         <activity android:name=".MainActivity">
             <intent-filter>

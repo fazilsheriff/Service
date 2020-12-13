@@ -11,20 +11,27 @@ class SampleService : Service() {
         TODO("Return the communication channel to the service.")
     }  
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        Log.i(TAG, "In Service class: Displays the current thread id "+Thread.currentThread().name.toString())
+        Log.i(
+            TAG,
+            "In Service class: Displays the current thread id " + Thread.currentThread().name.toString()
+        )
 
         for(i in 1..13)
         {
 //            Thread.sleep(1000)
-            showLog("Service is doing some thing!!"+i.toString())
+            showLog("Service is doing some thing!!" + i.toString())
         }
+        val i=Intent()
+        i.setClass(this, SecondActivity::class.java)
+        i.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(i)
         return super.onStartCommand(intent, flags, startId)
     }
     override fun onDestroy() {
         super.onDestroy()
         Log.i(TAG, "onDestroy: Serivce is Destoryed")
     }
-    fun showLog(MSG:String)
+    fun showLog(MSG: String)
     {
         Log.i(TAG, MSG)
     }
