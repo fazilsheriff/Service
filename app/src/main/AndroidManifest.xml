@@ -16,11 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<!--        <service-->
-<!--            android:name="com.example.service.LifeCycleService">-->
-<!--&lt;!&ndash;            android:enabled="true"&ndash;&gt;-->
-<!--&lt;!&ndash;            android:exported="true"&ndash;&gt;-->
-<!--            </service>-->
+        <service
+            android:name="com.example.service.LifeCycleService"
+            android:enabled="true"
+            android:exported="true">
+            </service>
     </application>
 
 </manifest>

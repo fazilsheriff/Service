@@ -17,7 +17,7 @@ class LifeCycleService: Service() {
         TODO("Return the communication channel to the service.")
     }
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        Log.i(TAG, "In Service class: Displays the current thread id "+Thread.currentThread().name.toString())
+        Log.i(TAG, " onStartCommand In Service class: Displays the current thread id "+Thread.currentThread().name.toString())
 
 //        for(i in 1..13)
 //        {
