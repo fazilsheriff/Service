@@ -8,6 +8,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class LifeCycleService: Service() {
     private  val TAG = "LifeCycleService"
+    override fun onCreate() {
+        super.onCreate()
+        Log.i(TAG, "OnCreate()")
+
+    }
     override fun onBind(intent: Intent): IBinder {
         TODO("Return the communication channel to the service.")
     }
